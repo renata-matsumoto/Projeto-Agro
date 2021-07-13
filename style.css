@@ -1,7 +1,9 @@
 *{
     font-family:'Roboto', sans-serif;
+    
 }
 .navbar {
+    /* background-color: blue; */
     transition: all 0.4s;
 }
 
@@ -26,9 +28,11 @@
     box-shadow: 1px 2px 10px rgba(242, 239, 239, 0.1);
 }
 
-.navbar.active .nav-link {
+
+
+/* .navbar.active .nav-link {
     color: ;
-}
+} */
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
@@ -103,4 +107,35 @@ footer img{
 
 .section3 p{
     margin-bottom: 5px;
+}
+
+/*Página Nutrição_Plantas*/
+.navbar-cor{
+    background-color: #37a603;
+    transition: all 0.4s;
+}
+
+.nutricao{
+    background-color:fuchsia;
+    height: 1500px;
+    
+}
+
+.nutricao1{
+    background-color: white;
+    height: 600px;
+    margin-top: 70px;
+}
+
+.nutricao1 div{
+    margin-top: 10px;
+}
+
+.nutricao1 p{
+    font-size: 1.0em;
+}
+
+.figure img{
+    height: 200px;
+    width: 100%;
 }
