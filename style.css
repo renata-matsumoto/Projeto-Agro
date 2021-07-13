@@ -81,7 +81,7 @@ header h1{
     width: 35px;
  }
 
- 
+  
 /* footer{
     align-items: center;
     background-color: saddlebrown;
@@ -95,7 +95,7 @@ footer img{
     display: flex;
     flex-direction: row;
     height: 50px;
-}  */
+} */
 
 .section3{
     background-color: #37a603;
@@ -104,7 +104,7 @@ footer img{
 }
 
 .section3 p{
-    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 /*Página Nutrição_Plantas*/
@@ -129,8 +129,8 @@ footer img{
     width: 100%;
 }
 
-.img2{
+/* .img2{
     height: 100px;
     width: 100px;
-}
+} */
 
