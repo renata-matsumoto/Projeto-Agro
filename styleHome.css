@@ -26,25 +26,9 @@
 }
 
 /* QUEM SOMOS - TEXTO */
-#quemsomostxt {
-  font-size: 2rem;
-  color: antiquewhite;
-  text-align: center;
-  font-family: "Roboto";
-  font-weight: bold;
-  border: 5px solid black;
-  padding: 10px;
-  margin-right: 5vw;
-}
 
 #contatotxt {
-  font-size: 40px;
-  color: antiquewhite;
-  text-align: center;
-  font-family: "Roboto";
-  font-weight: bold;
-  border: 5px solid black;
-  padding: 10px;
+  margin-right: 5vw;
 }
 
 .marca-dagua {
