@@ -33,12 +33,21 @@
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-    color: black;
+    color:brown;
     text-decoration: none;
 }
 
 .navbar.active .navbar-brand {
     color: #fff;
+}
+
+span{
+    border: 1px black;
+}
+
+header h1{
+    border-radius: 50px;
+    margin-right: 50px;
 }
 
 .main{
@@ -104,6 +113,7 @@
 
 .nutricao1{
     background-color: white;
+    /* height: 600px; */
     margin-top: 70px;
 }
 
@@ -111,10 +121,6 @@
     margin-top: 10px;
 }
 
-/* .nutricao1 img{
-    height: 200px; 
-    width: 200px;
-} */
 
 .figure img{
     height: 200px;
