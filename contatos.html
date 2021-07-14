@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contato</title>
+    <link rel="stylesheet" href="contatos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar-->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top py-3">
+            <a class="navbar-brand text-uppercase font-weight-bold textColor" href="#">Portal do Campo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon btn-outline-success"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item font-weight-bold" href="#">Guia de Informações</a>
+                            <a class="dropdown-item font-weight-bold" href="#">Nutrição de plantas</a>
+                            <a class="dropdown-item font-weight-bold" href="#">Tecnologia no Campo</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Quem Somos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Contatos</a></li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mx-sm-5" type="search" placeholder="Pesquisar">
+                    <button class="btn btn-outline-light my-2 ml-sm-0" type="submit">Pesquisar</button>
+                </form>
+            </div>
+
+            <div>
+                <div class="header1">
+                    <button onclick="diminuir()">A-</button>
+                    <button onclick="aumentar()">A+</button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="mapa">
+                <!--Google map-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15914.674794173703!2d-41.11569918342605!3d-4.284422852331912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x794888e3052d33b%3A0x9101e3680464c53e!2sSerra%20da%20Ibiapaba!5e0!3m2!1spt-BR!2sbr!4v1626187793555!5m2!1spt-BR!2sbr"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </section>
+        <section>
+
+            <div class="container">
+
+                <h1>Contato</h1>
+
+                <form>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" class="form-control" />
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>CPF</label>
+
+                            <input type="text" class="form-control" name="cpf" maxlength="11" onblur="return verificarCPF(this.value)" onkeypress="$(this).mask('000.000.000-00');">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>CNPJ</label>
+                            <input type="text" class="form-control" onkeypress="$(this).mask('00.000.000/0000-00')">
+                        </div>
+
+                    </div>
+                    <div class="form-group col-md-4">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">Cidade</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputEstado">Estado</label>
+                            <select id="inputEstado" class="form-control">
+                            <option selected>Escolher...</option>
+                            <option>São Paulo</option>
+                            <option>Ceará</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputCEP">CEP</label>
+                            <input type="text" class="form-control" id="inputCEP">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="senhacampo">Senha:</label>
+                            <input type="passoword" id="senhacampo" class="form-control" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="senhacampo1">Confirme a senha:</label>
+                            <input type="passoword" id="senhacampo1" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p>Aceitar termos de uso</p>
+                        <div class="form-check-inline">
+                            <input type="radio" name="confirmar" class="form-check-input" />
+                            <label class="form-check-label" for="sim">Sim</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input type="radio" name="confirmar" class="form-check-input" />
+                            <label class="form-check-label" for="nao">Não</label>
+                        </div>
+
+
+                    </div>
+                    <div class="form-group">
+                        <label for="areaCampo">Sugestões</label>
+                        <textarea id="areaCampo" class="form-control"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Onde nos conheceu?</p>
+                        <div class=" form-check-inline">
+                            <input type="checkbox" id="checkcampo" class="form-check-input">
+                            <label class="form-check-label" for="exampleCheck1">Internet</label>
+                        </div>
+
+                        <div class="form-check-inline">
+                            <input type="checkbox" id="checkcampo" class="form-check-input">
+                            <label class="form-check-label" for="exampleCheck1">Tv </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input type="checkbox" id="checkcampo" class="form-check-input">
+                            <label class="form-check-label" for="exampleCheck1">Jornal </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input type="checkbox" id="checkcampo" class="form-check-input">
+                            <label class="form-check-label" for="exampleCheck1">Outros</label>
+                        </div>
+
+
+                    </div>
+                    <button type="submit" class="btn btn-success">Enviar</button>
+
+                </form>
+            </div>
+
+            <section>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <div class="text-center">
+                            <div class="text-center">
+                                <img src="logoagro1.jpg" class="rounded img-fluid rounded-circle w-25" alt="...">
+                            </div>
+                            <h3 class="mt-5">Portal do Campo</h3>
+                            <p class="text-center">
+                                Serra da Ibiapaba Cidade São Benedito- CE<br> Rodovia bsbbbhshsj, km 367<br> Cep:00000-000<br> São Benedito-CE<br> tel: 55 (88) xxxx-xxxx
+
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-center">
+                            <div class="text-center">
+                                <img src="Adriele.jpeg" class="rounded img-fluid rounded-circle w-25" alt="...">
+                            </div>
+                            <h3 class="mt-5">Idealizadora do projeto</h3>
+                            <p class="text-center">
+                                Antonia Adriele Oliveira Correia<br> Formação: Engenharia Agrícola e Ambiental<br> Pela Faculdade FIED Faculdade Ieducare
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+    </main>
+
+    </section>
+
+    </section>
+
+
+    <div class="whatsApp">
+        <a href="https://api.whatsapp.com/send?phone=5519999999999&text=Texto%20aqui" target="_blank"><img src="img/whats.png" alt="Contato pelo WhatsApp">
+        </a>
+    </div>
+    </main>
+
+
+    <section class="row fixed-bottom section3">
+        <div class="col-md-3 font-weight-bolder text-center mt-3">
+            <p>Fale conosco</p>
+        </div>
+        <div class="col-md-3 text-center">
+            <p class="font-weight-bolder">Telefone</p>
+            <p>(011) 3256-6589</p>
+        </div>
+        <div class="col-md-3 text-center">
+            <p class="font-weight-bolder">WhatsApp</p>
+            <p>(11) 998745-5625</p>
+        </div>
+        <div class="col-md-3 text-center">
+            <p class="font-weight-bolder">E-mail</p>
+            <p>portaldocampo@pdc.org.br</p>
+        </div>
+    </section>
+
+
+
+    <footer>
+
+        <section class="row fixed-bottom section3">
+            <div class="col-md-3 font-weight-bolder text-center mt-3">
+                <p>Fale conosco</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <p class="font-weight-bolder">Telefone</p>
+                <p>(011) 3256-6589</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <p class="font-weight-bolder">WhatsApp</p>
+                <p>(11) 998745-5625</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <p class="font-weight-bolder">E-mail</p>
+                <p>portaldocampo@pdc.org.br</p>
+            </div>
+        </section>
+
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
