@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <link rel="stylesheet" href="style..css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
@@ -31,14 +31,16 @@
     
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav">
-                <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Home</a></li>                    
+                <li class="nav-item"><a href="index.html" class="nav-link font-weight-bold">Home</a></li>                    
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias
                     </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item font-weight-bold" href="#">Guia de Informações</a>
-                            <a class="dropdown-item font-weight-bold" href="#">Nutrição de plantas</a>
-                            <a class="dropdown-item font-weight-bold" href="#">Tecnologia no Campo</a>
+                            <a class="dropdown-item font-weight-bold" href="familiar.html">Agricultura Familiar</a>
+                            <a class="dropdown-item font-weight-bold" href="nutricao_plantas.html">Nutrição de plantas</a>
+                            <a class="dropdown-item font-weight-bold" href="tecnologia.html">Agricultura de Precisão</a>
+                            <a class="dropdown-item font-weight-bold" href="irrigacao.html">Irrigação e Drenagem</a>
+                            <a class="dropdown-item font-weight-bold" href="agronegocio.html">Agronegócio</a>
                         </div>
                 </li>
                 <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Quem Somos</a></li>
@@ -106,13 +108,13 @@
 </main>
 
 
- <footer>
+ <!-- <footer>
     <div> 
     <img src="img/Cinza Círculo de Folhas Floral Logotipo.png" alt="">jajajajaja
     
     </div>
 
- </footer>
+ </footer> -->
 
  <section class="row fixed-bottom section3">
      <div class="col-md-3 font-weight-bolder text-center mt-3">
@@ -131,7 +133,16 @@
        <p>portaldocampo@pdc.org.br</p>
     </div>
  </section>
-
+ <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 
   <!-- JavaScript (Opcional) -->
   <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

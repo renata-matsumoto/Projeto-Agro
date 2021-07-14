@@ -11,6 +11,7 @@ $(function() {
 /*Acessibilidade*/
 
 tamanho = 10;
+Daniel
 
 function diminuir() {
     tamanho--;
@@ -64,3 +65,13 @@ function verificarCPF(c) {
         alert("CPF Válido")
     }
 }
+
+function diminuir() {
+    tamanho --;
+    document.body.style.fontSize = tamanho +"px";
+}
+function aumentar() {
+    tamanho ++;
+    document.body.style.fontSize = tamanho +"px";
+}
+

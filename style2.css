@@ -1,0 +1,80 @@
+.container{
+    margin-top: 100px;
+}
+
+.whatsApp img{
+    bottom: 90px; 
+    height: 35px; 
+    position: fixed;
+    right: 30px;
+    width: 35px;
+ }
+
+ footer img{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+
+.navbar.active {
+    background: #317302;
+    box-shadow: 1px 2px 10px rgba(242, 239, 239, 0.1);
+}
+
+/* #colu9 , #colu10{
+    border: 2px solid black;
+} */
+
+.section3{
+    background-color: #37a603;
+    color: white;
+    height: 60px;  
+}
+
+.section3 p{
+    margin-bottom: 5px;
+}
+
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: antiquewhite;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #317302;
+    box-shadow: 1px 2px 10px rgba(242, 239, 239, 0.1);
+}
+
+/* .navbar.active .nav-link {
+    color: ;
+} */
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color:brown;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #fff;
+}
+
+.navbar-cor{
+    background-color: #37a603;
+    transition: all 0.4s;
+}
