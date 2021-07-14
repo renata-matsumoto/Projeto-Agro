@@ -81,8 +81,8 @@ header h1{
     width: 35px;
  }
 
- 
-footer{
+  
+/* footer{
     align-items: center;
     background-color: saddlebrown;
     display: flex;
@@ -95,7 +95,7 @@ footer img{
     display: flex;
     flex-direction: row;
     height: 50px;
-} 
+} */
 
 .section3{
     background-color: #37a603;
@@ -104,7 +104,7 @@ footer img{
 }
 
 .section3 p{
-    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 /*Página Nutrição_Plantas*/
@@ -115,7 +115,7 @@ footer img{
 
 .nutricao1{
     background-color: white;
-    height: 600px;
+    /* height: 600px; */
     margin-top: 70px;
 }
 
@@ -123,16 +123,14 @@ footer img{
     margin-top: 10px;
 }
 
-.nutricao1 p{
-    /* font-size: 1.0em; */
-}
 
 .figure img{
     height: 200px;
     width: 100%;
 }
 
-.img2{
+/* .img2{
     height: 100px;
     width: 100px;
-}
+} */
+
