@@ -26,9 +26,9 @@
     box-shadow: 1px 2px 10px rgba(242, 239, 239, 0.1);
 }
 
-.navbar.active .nav-link {
+/* .navbar.active .nav-link {
     color: ;
-}
+} */
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
@@ -52,7 +52,7 @@ header h1{
 .wrap {
     /*Ajuste a largura e altura do vídeo*/
     width: 100%;
-    height: 450px;
+    height: 46vw;
     /*o elemento video e o .container se adaptarem ao .wrap*/
     position: relative;
 }
@@ -77,16 +77,17 @@ header h1{
     position: fixed;
     right: 30px;
     width: 35px;
+    z-index: 999;
  }
 
 
 footer{
     align-items: center;
-    background-color: saddlebrown;
+    background-color: #37a603;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 1500px;
+    height: 150px;
 }
 
 footer img{
@@ -104,3 +105,4 @@ footer img{
 .section3 p{
     margin-bottom: 5px;
 }
+

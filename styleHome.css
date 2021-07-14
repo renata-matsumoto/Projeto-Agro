@@ -1,0 +1,70 @@
+#logo {
+    width: 5vw;
+    height: 5vw;
+}
+
+
+.section1 {
+  border-top: 5px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* QUEM SOMOS - SESSÃO */
+
+#quemSomos {
+  background-color: #3fbf04;
+  height: 30vw;
+  background-image: url(img/img-quemsomos.png);
+  background-attachment: fixed;
+  background-size: cover;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+/* QUEM SOMOS - TEXTO */
+#quemsomostxt {
+  font-size: 2rem;
+  color: antiquewhite;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: bold;
+  border: 5px solid black;
+  padding: 10px;
+  margin-right: 5vw;
+}
+
+#contatotxt {
+  font-size: 40px;
+  color: antiquewhite;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: bold;
+  border: 5px solid black;
+  padding: 10px;
+}
+
+.marca-dagua {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+#imglogo{
+    width: 35%;
+    height: 35%;
+}
+
+
+
+.imgCarrossel {
+  height: 40vw;
+  object-fit: contain;
+}
+
+.legenda {
+  background-color: black;
+  width: fit-content;
+  font-family: "Roboto";
+  font-size: 40px;
+}
+
