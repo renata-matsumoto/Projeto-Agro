@@ -1,8 +1,12 @@
-#logo {
-    width: 5vw;
-    height: 5vw;
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
 }
 
+#logo {
+  width: 5vw;
+  height: 5vw;
+}
 
 .section1 {
   border-top: 5px solid black;
@@ -49,12 +53,10 @@
   z-index: 1;
 }
 
-#imglogo{
-    width: 35%;
-    height: 35%;
+#imglogo {
+  width: 35%;
+  height: 35%;
 }
-
-
 
 .imgCarrossel {
   height: 40vw;
@@ -67,4 +69,3 @@
   font-family: "Roboto";
   font-size: 40px;
 }
-

@@ -1,8 +1,8 @@
 *{
     font-family:'Roboto', sans-serif;
+    font-size: 1.0em;
 }
 .navbar {
-    font-size: 1.0em;
     transition: all 0.4s;
 }
 

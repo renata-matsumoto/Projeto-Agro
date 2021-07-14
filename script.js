@@ -11,7 +11,6 @@ $(function() {
 /*Acessibilidade*/
 
 tamanho = 10;
-Daniel
 
 function diminuir() {
     tamanho--;
