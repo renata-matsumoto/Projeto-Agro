@@ -41,6 +41,10 @@
     color: #fff;
 }
 
+span{
+    border: 1px black;
+}
+
 header h1{
     border-radius: 50px;
     margin-right: 50px;
@@ -89,8 +93,10 @@ header h1{
     height: 60px;  
 }
 
-.section3 p{
-    margin-bottom: 5px;
+.section3 a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
 }
 
 .navbar-cor{
