@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nutrição das Plantas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
+
+
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+
+</head>
+<body>
+ 
+   <!-- Navbar-->
+<header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top py-3 navbar-cor">
+        <a class="navbar-brand text-uppercase font-weight-bold textColor" href="#">Portal do Campo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon btn-danger"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html" class="nav-link font-weight-bold">Home</a></li>                    
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item font-weight-bold" href="familiar.html">Agricultura Familiar</a>
+                            <a class="dropdown-item font-weight-bold" href="nutricao_plantas.html">Nutrição de plantas</a>
+                            <a class="dropdown-item font-weight-bold" href="#">Agro 5.0 e Agricultura de Precisão</a>
+                            <a class="dropdown-item font-weight-bold" href="irrigacao.html">Irrigação e Drenagem</a>
+                            <a class="dropdown-item font-weight-bold" href="#">Agronegócio</a>
+                        </div>
+                </li>
+                <li class="nav-item"><a href="quem_somos.html" class="nav-link font-weight-bold">Quem Somos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Contatos</a></li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mx-sm-5" type="search" placeholder="Pesquisar">
+                <button class="btn btn-outline-light my-2 ml-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+
+        <div>
+            <div class ="header1">
+                <button onclick="diminuir()">A-</button>
+                <button onclick="aumentar()">A+</button>   
+            </div>
+        </div>
+    
+    </nav>
+</header>
+    
+<main class="nutricao container-fluid">
+    
+    <section class="nutricao1">
+        <div class="row">
+            <div class="col-md-12 mt-5 p-2">
+                <h1 class="font-weight-bolder">Quem Somos</h1>
+                
+                <h4 class="mt-5 text-center">Entra para solidificar as relações de produtores orgânicos com os consumidores sustentáveis. Realizamos fortes laços com a produção e o consumo, tornando essa relação estratégica sustentável e principalmente duradoura.</h4>
+            </div>
+        </div>
+
+        <section>
+            <div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 text-justify" id="colum7">
+                        <h4 class="text-center font-weight-bold"> Missão</h4>
+                        <p>Incentivar o consumo orgânico assim como as tecnologias para a produção orgânica fortalecendo essa relação alimentícia estratégica.</p>
+                    </div>
+
+                    <div class="col-md-4 text-justify" id="colum7">
+                        
+                        <h4 class="text-center font-weight-bold">Visão</h4>
+                            <p>Sustentabilidade alimentícia de qualidade.</p>
+                            
+                    </div>
+
+                    <div class="col-md-4 text-justify" id="colum7">
+                        
+                        <h4 class="text-center font-weight-bold">Valores</h4>
+                         <ul>
+                             <li>Qualidade</li>
+                             <li>Respeito</li>
+                             <li>Fidelidade</li>
+                             <li>Sustentabilidade</li>
+                         </ul>
+                    </div>
+                </div> 
+                
+             </div>
+
+            
+        </section>
+
+        <section>
+           <div class="col-md-12">
+                <h3 class="col-md mt-5 font-weight-bolder">O Projeto</h3>
+                <p class="col-md mt-5 text-justify">A agricultura orgânica vem crescendo em todo mundo, muito em função de seu consumo em ascensão. Hoje no País já existem cerca de 11.500 propriedades dedicadas a este tipo de cultivo, em uma área total de aproximadamente 1,5 milhão de hectares, onde 70% pertence a agricultores familiares. Segundo o Ministério da Agricultura, o crescimento anual da agricultura orgânica já é de 30% e o faturamento supera de R$2,5 bilhões por ano. O Brasil supri cerca de 4% do consumo mundial de orgânicos.</p>
+                <p class="col-md mt-5 text-justify">A razão deste cenário de crescimento do setor é devido ao aumento da demanda dos consumidores por produtos mais saudáveis e pela conservação do meio ambiente. Segundo uma pesquisa realizada pela Agronomic Consulting em 2016, o perfil do consumidor ainda é de classes mais altas, mulheres e com maior escolaridade, porém está começando a mudar. Devido ao aumento do consumo, os preços dos produtos ficam cada vez mais acessíveis para famílias com rendas mais baixas, além da conscientização alimentar e da sustentabilidade que estão abrangendo maiores parcelas da população.</p>
+            </div>
+
+            <div class="col-md-12">
+                <h3 class="col-md mt-5 font-weight-bolder">Justificativa</h3>
+                <p class="col-md mt-5 text-justify">Um dos maiores gargalos do movimento orgânico e, principalmente, da agricultura familiar é o acesso aos mercados e aos processos convencionais de comercialização. Por outro lado, os consumidores também têm muita dificuldade de acesso frequente a produtos orgânicos com qualidade e garantia de procedência (certificação). O Campus Machado, por sua vez, possui interessados em consumir alimentos orgânicos.</p>
+
+                <h3 class="col-md mt-5 font-weight-bolder">Objetivo</h3>
+                <p class="col-md mt-5 text-justify"> Implantar uma plataforma de relacionamento entre produtores orgânicos certificados do Sul de Minas e servidores e população de Machado, MG, que viabilize a aquisição de produtos frescos e saudáveis e também auxilie agricultores familiares da região que possuem dificuldade de acesso aos mercados convencionais.</p>
+            </div>
+           
+
+        
+        </section>
+
+        
+
+    <div class="whatsApp">
+        <a href="https://api.whatsapp.com/send?phone=5519999999999&text=Texto%20aqui"
+        target="_blank"><img src="img/whats.png" alt="Contato pelo WhatsApp">
+        </a>
+    </div>   
+</main>
+
+ <section class="row fixed-bottom section3">
+     <div class="col-md-3 font-weight-bolder text-center mt-3">
+         <p>Fale conosco</p>
+     </div>
+     <div class="col-md-3 text-center"> 
+        <p class="font-weight-bolder">Telefone</p>
+        <p>(011) 3256-6589</p>
+     </div>
+     <div class="col-md-3 text-center">
+        <p class="font-weight-bolder">WhatsApp</p>
+        <p>(11) 998745-5625</p>
+    </div>
+    <div class="col-md-3 text-center">
+       <p class="font-weight-bolder">E-mail</p>
+       <p>portaldocampo@pdc.org.br</p>
+    </div>
+ </section>
+
+
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
